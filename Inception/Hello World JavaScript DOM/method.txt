@@ -1,0 +1,12 @@
+Currently, you have div with id root. <div id="root"> </div>.
+Your task is to add a h1 tag inside div and show hello world on screen. 
+<div id="root"> 
+    <h1> Hello World </h1>
+</div>
+
+Solution (in script file):-
+
+step 1: make a new element for h1.   const heading = document.createElement("h1");
+step 2: Now, add hello world message inside the h1.   heading.innerHTML = "Hello World";
+step 3: Now, find the root using findElementById.    const root = document.findElementById("root");
+step4: Now, append the element h1 as a child of root.   root.appendChild(heading);
