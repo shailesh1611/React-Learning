@@ -1,0 +1,23 @@
+We will create the h1 tag inside div using the react.
+
+This is given to us in html :
+<div id = "root"> 
+</div>
+
+We have to make this :
+<div id = "root">
+    <h1> Hello World React !! </h1>
+</div>
+
+To do this follow the steps :-
+
+step-1 : First make the h1 element using react.createElement
+step-2 : Find the node where you want to render the element by using reactDOM.createRoot
+step-3 : Now, render the element in the node using node.render(element)
+
+
+Note :- 1. To use the react we have to include the cdn links of react in the script tag.
+        2. There are three arguments in React.createElement method :
+            argument 1 : tag name. For ex - "h1", "div"
+            argument 2 : object of attributes of tag. For ex - {id : "parent", xyz : "ab"}
+            argument 3 : children
