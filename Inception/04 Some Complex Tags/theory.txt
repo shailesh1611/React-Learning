@@ -1,0 +1,30 @@
+We have to make some nested tags using the react.
+
+We have given this :
+    <div id = "root"> </div>
+
+We have to make this :
+    <div id = "root"> 
+        <div id = "parent">
+            <div id = "child">
+                <h1> I'm a h1 tag </h1>
+            </div>
+        </div>
+    </div>
+
+To make this follow the steps :-
+
+step-1 : First create the element. To make the nested element in the children argument of first element we have to create another element. And so on for more the nested elements or tags.
+
+step-2 : Now, same steps, find root/node where to render the stuffs.
+
+step-3 : Now, render the elements.
+
+
+Note :- To make the sibling tags like this :
+    <div id = "root"> 
+        <h1> This is sibling 1 </h1>
+        <h1> This is sibling 2 </h1>
+    </div>
+
+We have to pass the array of children in the createElement method of react.
