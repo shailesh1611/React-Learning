@@ -1,0 +1,22 @@
+{
+  "name": "igniting-our-app",
+  "version": "1.0.0",
+  "description": "Igniting our App",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shailesh1611/React-Learning.git"
+  },
+  "author": "Shailesh Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shailesh1611/React-Learning/issues"
+  },
+  "homepage": "https://github.com/shailesh1611/React-Learning#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}
