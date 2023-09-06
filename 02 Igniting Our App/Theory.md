@@ -25,7 +25,7 @@
 # 9. .gitIgnore : gitignore file tells Git which files to ignore when committing your project to the GitHub repository. gitignore is located in the root directory of your repo. The .gitignore file itself is a plain text document.
 
 # Some Steps to do perform task :-
-#    Step 1 - run npm init on cli.
+#    Step 1 - run npm init on CLI.
 #    Step 2 - Give all the necessary information like version, author etc.
 #    Step 3 - After this package.json file will be created.
 #    Step 4 - Now, we have to install the bundlers softwares. Here we will install parcel.
