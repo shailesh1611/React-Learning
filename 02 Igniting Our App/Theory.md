@@ -1,33 +1,48 @@
-# In this Episode, we will learn how to create a react project production ready from stratch.
-# We will install all the packages, files required for this.
+- In this Episode, we will learn how to create a react project production ready from stratch.
+- We will install all the packages, files required for this.
 # Some Useful Terms and Notes :-
 
-# 1. npm => npm is a package manager for the javascript which has majorily all the packages related to javascript.
+# 1. npm :
+- npm is a package manager for the javascript which has majorily all the packages related to javascript.
 
-# 2. Packages => A package is a compressed file that includes all the necessary files required for the software application that provides any fuctionality.
+# 2. Packages : 
+- A package is a compressed file that includes all the necessary files required for the software application that provides any fuctionality.
 
-# 3. Dependencies => A depency is a package on which our project or app is dependent. It means that package is required to run or install our software or app.
+# 3. Dependencies :
+- A depency is a package on which our project or app is dependent. It means that package is required to run or install our software or app.
 
-# 4. Package.json => Package.json holds important information about the project. It contains human-readable metadata about the project (like the project name and description) as well as functional metadata like the package version number and a list of dependencies required by the application.
+# 4. Package.json :
+- Package.json holds important information about the project. It contains human-readable metadata about the project (like the project name and description) as well as functional metadata like the package version number and a list of dependencies required by the application.
 
-# 5. Uses of package.json file => Your project's package.json is the central place to configure and describe how to interact with and run your application. It is used by the npm CLI (and yarn) to identify your project and understand how to handle the project's dependencies. It's the package.json file that enables npm to start your project, run scripts, install dependencies, publish to the NPM registry, and many other useful tasks. The npm CLI is also the best way to manage your package.json because it helps generate and update your package.json file throughout a project's life. Your project must include a package.json before any packages can be installed from NPM. This is probably the top reason why you need one in your project.
+# 5. Uses of package.json file :
+- Your project's package.json is the central place to configure and describe how to interact with and run your application. It is used by the npm CLI (and yarn) to identify your project and understand how to handle the project's dependencies. It's the package.json file that enables npm to start your project, run scripts, install dependencies, publish to the NPM registry, and many other useful tasks. The npm CLI is also the best way to manage your package.json because it helps generate and update your package.json file throughout a project's life. Your project must include a package.json before any packages can be installed from NPM. This is probably the top reason why you need one in your project.
 
 # 6. Types of Dependencies :- 
 
-# Dev Dependencies: In package.json file, there is an object called as dev Dependencies and it consists of all the packages that are used in the project in its development phase and not in the production or testing environment with its version number. So, whenever you want to install any library that is required only in your development phase then you can find it in the dev Dependencies object. For Ex - BootStrap, Bundler Softwares like Parcel are dev dependencies as they are need in development phases.
+# Dev Dependencies: 
+- In package.json file, there is an object called as dev Dependencies and it consists of all the packages that are used in the project in its development phase and not in the production or testing environment with its version number. So, whenever you want to install any library that is required only in your development phase then you can find it in the dev Dependencies object. For Ex - BootStrap, Bundler Softwares like Parcel are dev dependencies as they are need in development phases.
 
-# Peer Dependencies: In package.json file, there is an object called as peerDependencies and it consists of all the packages that are exactly required in the project or to the person who is downloading and the version numbers should also be the same. That is the reason they were named as peerDependencies. The best example is ‘react’ which is common in every project to run similarly.
+# Peer Dependencies: 
+- In package.json file, there is an object called as peerDependencies and it consists of all the packages that are exactly required in the project or to the person who is downloading and the version numbers should also be the same. That is the reason they were named as peerDependencies. The best example is ‘react’ which is common in every project to run similarly.
 
-# 7. Bundlers: A bundler in React is a tool that allows developers to package their code into a single file or bundle. This bundle can then be used to run the application in the browser. Bundlers are used to reduce the size of the code and improve the performance of the application. For Ex - Parcel, Webpack, Rollup, Fusebox etc.
+# 7. Bundlers: 
+- A bundler in React is a tool that allows developers to package their code into a single file or bundle. This bundle can then be used to run the application in the browser. Bundlers are used to reduce the size of the code and improve the performance of the application. For Ex - Parcel, Webpack, Rollup, Fusebox etc.
 
-# 8. Package-lock.json: package-lock.json is a file that is automatically generated by npm when a package is installed. It records the exact version of every installed dependency, including its sub-dependencies and their versions. 
+# 8. Package-lock.json: 
+- package-lock.json is a file that is automatically generated by npm when a package is installed. It records the exact version of every installed dependency, including its sub-dependencies and their versions. 
 
-# 9. .gitIgnore : gitignore file tells Git which files to ignore when committing your project to the GitHub repository. gitignore is located in the root directory of your repo. The .gitignore file itself is a plain text document.
+# 9. .gitIgnore : 
+ - gitignore file tells Git which files to ignore when committing your project to the GitHub repository. gitignore is located in the root directory of your repo. The .gitignore file itself is a plain text document.
 
 # Some Steps to do perform task :-
-#    Step 1 - run npm init on CLI.
-#    Step 2 - Give all the necessary information like version, author etc.
-#    Step 3 - After this package.json file will be created.
-#    Step 4 - Now, we have to install the bundlers softwares. Here we will install parcel.
-#    Step 5 - To install it run : npm install -D parcel. Here, -D is use to tell our package.json that it is dev dependency tool.
-#    Step 6 - Now, make a .gitignore file. Put node_modules in .gitignore. So it will not uploaded on the GitHub. Node_modules can be regenerated as we have all dependencies in our package.json file. Hence, it will automatically install by server.
+-    Step 1 - run npm init on CLI.
+
+-    Step 2 - Give all the necessary information like version, author etc.
+
+-    Step 3 - After this package.json file will be created.
+
+-    Step 4 - Now, we have to install the bundlers softwares. Here we will install parcel.
+
+-    Step 5 - To install it run : npm install -D parcel. Here, -D is use to tell our package.json that it is dev dependency tool.
+
+-    Step 6 - Now, make a .gitignore file. Put node_modules in .gitignore. So it will not uploaded on the GitHub. Node_modules can be regenerated as we have all dependencies in our package.json file. Hence, it will automatically install by server.
