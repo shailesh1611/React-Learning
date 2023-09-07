@@ -34,15 +34,44 @@
 # 9. .gitIgnore : 
  - gitignore file tells Git which files to ignore when committing your project to the GitHub repository. gitignore is located in the root directory of your repo. The .gitignore file itself is a plain text document.
 
+ # 10. Some Features of Bundlers like Parcel :
+ - Dev Build => build development build for our app.
+ - HMR => Hot Module Replacement. It is used for live reloading of app to any change. It uses File Matching Algorithm written in C++.
+ - Minification => It minified our code.
+ - Image Optimization => It optimize our images used in our app for fast performance.
+ - Compression => It compress our whole project.
+ - Bundling => It bundles our code into single file.
+ - Caching => It uses cache for faster builds.
+ - Tree Shaking => It uses tree shaking algo to remove unused code from our project. This makes our app fast.
+ - Error Handling => It tells about errors in code and also provides diagonstics for that.
+ - HTTPs => We can build our app with https protocol also. 
+ - Differential Bundling => It means, parcel will create different bundles for different versions of browsers for smooth running of app in different browsers.
+
+ # 11. Building Production Build using Parcel :
+- To build production build, use command : `npx parcel build index.html`
+
+
 # Some Steps to do perform task :-
--    Step 1 - run npm init on CLI.
+-    Step 1 - run `npm init` on CLI.
 
 -    Step 2 - Give all the necessary information like version, author etc.
 
--    Step 3 - After this package.json file will be created.
+-    Step 3 - After this `package.json` file will be created.
 
--    Step 4 - Now, we have to install the bundlers softwares. Here we will install parcel.
+-    Step 4 - Now, we have to install the bundlers softwares. Here we will install `parcel`.
 
--    Step 5 - To install it run : npm install -D parcel. Here, -D is use to tell our package.json that it is dev dependency tool.
+-    Step 5 - To install it run : `npm install -D parcel`. Here, -D is use to tell our package.json that it is dev dependency tool.
 
--    Step 6 - Now, make a .gitignore file. Put node_modules in .gitignore. So it will not uploaded on the GitHub. Node_modules can be regenerated as we have all dependencies in our package.json file. Hence, it will automatically install by server.
+-    Step 6 - Now, make a `.gitignore file`. Put `node_modules` in `.gitignore`. So it will not uploaded on the GitHub. `Node_modules can be regenerated as we have all dependencies in our package.json file. Hence, it will automatically install by server`.
+
+-    Step 7 - Now, we have to build our app using the parcel. Run command : `npx parcel index.html`. To execute any package we use `npx` command.
+
+-    Step 8 - To avoid using `CDN React Links` we should install the `react` package and `react-dom` using `npm`.
+
+-    Step 9 - To install : run `npm install react`. After this, run `npm install react-dom`. This will install `react` and `react-dom` as normal dependencies. Here, `normal dependencies` is required because `react` and `react-dom` are required `after the development` phase also.
+
+-   Step 10 - Now, to use `react` use `import React from "react"` and to use `react-dom` use `import React-DOM from "react-dom/client"`. `Note` - There will be error to overcome that error use `type = "module"` in `script` tag in `index.html`.
+
+-   Step 11 - Since, we can regenerate `dist` and `.parcel-cache` by build command using parcel. We should put these folders in `.gitignore`.
+
+-   Step 12 - To make our app browser compatible we can put `browsersList` in `package.json`. Use website https://browserslist.dev/ . Add this in `package.json` for now : ` browserslist : [ "last 2 version" ] `
