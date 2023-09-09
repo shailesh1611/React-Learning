@@ -1,0 +1,32 @@
+{
+  "name": "laying-the-foundation",
+  "version": "1.0.0",
+  "description": "Laying The Foundation",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shailesh1611/React-Learning.git"
+  },
+  "author": "Shailesh Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shailesh1611/React-Learning/issues"
+  },
+  "homepage": "https://github.com/shailesh1611/React-Learning#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 version"
+  ]
+}
