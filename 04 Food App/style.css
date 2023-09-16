@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+img {
+    width : 150px;
+    /* margin : 16px; */
+}
+
+.header {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin : 16px;
+    align-items: center;
+    padding: 16px;
+    font-size: 22px;
+}
+
+.nav-items ul{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+.body {
+    margin: 160px;
+    padding: 0px 16px;
+}
+
+.res-Container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    /* gap: 32px; */
+    row-gap: 32px;
+}
+
+.res-Card {
+    transition: transform .2s;
+}
+
+.res-Card:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.resCard-Img img {
+    border-radius: 16px;
+    width: 219px;
+    height: 147px;
+}
+
+.resCard-Content {
+    margin: 16px;
+} 
+
+
+.res-Name {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.star-rating img{
+    width: 18px;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cuisine , .address{
+    font-weight: 100;
+}
