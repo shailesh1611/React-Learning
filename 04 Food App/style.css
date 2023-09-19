@@ -32,11 +32,11 @@ img {
 }
 
 .res-Container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap:wrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     /* gap: 32px; */
-    row-gap: 32px;
+    row-gap: 12px;
+    line-height: 1.4em;
 }
 
 .res-Card {
@@ -61,7 +61,8 @@ img {
 
 .res-Name {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 0px;
 }
 
 .star-rating img{
@@ -72,8 +73,10 @@ img {
     display: flex;
     align-items: center;
     gap: 5px;
+    padding: 0px;
 }
 
 .cuisine , .address{
     font-weight: 100;
+    padding: 0px;
 }
