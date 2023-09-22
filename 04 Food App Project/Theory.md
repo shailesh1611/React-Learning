@@ -34,3 +34,29 @@
         ```
         import {<variable name>} from "path";
         ```
+
+- # Why React is faster ?
+    - It has efficient DOM Manipulation.
+
+# Introduction to React Hooks :
+- Hooks are the `JavaScript Utility Fuctions` that have some `special functionality` basically. These are predefined functions that are given to us by React.
+
+- # Type of Hooks : 
+    - There are many types of Hooks but we will see only useState() this time.
+
+    - `useState()` : The useState() Hook provides those two things:
+        - A state variable to retain the data between renders.
+        - A state setter function to update the variable and trigger React to render the component again.
+        - To add a state variable, import useState from React at the top of the file:
+            ```
+            import { useState } from 'react';
+            ```
+        - To use the useState() hook, we will use this syntax : 
+            ```
+            const [var,setVar] = useState(initialize_var);
+            ```
+        - `Note` : It should be declared inside the `component`. 
+
+    - # How React manages the state of any variable?
+        - `React` uses the `Reconciliation Algo` also known as `React-Fiber`. This basically makes the `virtual dom` of the components. Virtual DOM is representation of `actual DOM` that react makes for `state management`. Now, If any change happens in the `new dom` then React will track of this using `diffing algorithm`. `Diffing Algo` compares the two `DOM's`. After this react `re-renders` the elements using new data.
+        - You can read all details on this link : https://github.com/acdlite/react-fiber-architecture
