@@ -60,3 +60,22 @@
     - # How React manages the state of any variable?
         - `React` uses the `Reconciliation Algo` also known as `React-Fiber`. This basically makes the `virtual dom` of the components. Virtual DOM is representation of `actual DOM` that react makes for `state management`. Now, If any change happens in the `new dom` then React will track of this using `diffing algorithm`. `Diffing Algo` compares the two `DOM's`. After this react `re-renders` the elements using new data.
         - You can read all details on this link : https://github.com/acdlite/react-fiber-architecture
+
+# Monolithic and MicroServices Architecture
+- # Monolithic Architecture : 
+    - A monolithic architecture is a `singular`, `large computing network` with `one code base` that couples all of the business concerns together. To make a change to this sort of application requires updating the entire stack by accessing the code base and building and deploying an updated version of the service-side interface. This makes updates restrictive and time-consuming. 
+
+- # Microservices Architecture : 
+    - A microservices architecture, also simply known as `microservices`, is an architectural method that relies on a series of `independently deployable services`. These services have their `own business logic and database` with a specific goal. Updating, testing, deployment, and scaling occur within each service. Microservices decouple major business, domain-specific concerns into separate, independent code bases. `Microservices don’t reduce complexity`, but they make any `complexity visible` and `more manageable `by separating tasks into `smaller processes `that function independently of each other and contribute to the overall whole. 
+
+# Approaches for rendering our data from an API 
+- `Approach 1`:
+    ```
+    Loads -> API Call (takes time to load data) -> Render our Data
+    ```
+- `Approach 2`:
+    ```
+    Loads -> Render(basically render our skeleton) -> API Call -> Render our Data
+    ```
+
+- The `Approach 2` is `better` as compared to `Approach 1`. This is because in` Approach 1` our page will `remain blank until our api fetch the data`. This is bad user experience. Hence, `Approach 2` is `good` as it will `loads dummy data or skeleton (Shimmer UI)`. This is `good user experience`. However, Approach 2 has two renders but due to very good render cycle of react it will not slow.
