@@ -79,3 +79,22 @@
     ```
 
 - The `Approach 2` is `better` as compared to `Approach 1`. This is because in` Approach 1` our page will `remain blank until our api fetch the data`. This is bad user experience. Hence, `Approach 2` is `good` as it will `loads dummy data or skeleton (Shimmer UI)`. This is `good user experience`. However, Approach 2 has two renders but due to very good render cycle of react it will not slow.
+
+# useEffect() Hook :
+- useEffect() `delays` a piece of code from running until the render is reflected on the screen.
+- useEffect() has following syntax :
+    ```
+    useEffect(()=>{
+        // Code that is to be delay
+    },[])
+    ```
+- useEffect() accepts two arguments i.e. a callback function, a dependency array.
+
+# Adding Shimmer UI in our app using useEffect() :
+- We can add `shimmer ui` in our app to enhance the user experience of our app.
+- `Shimmer UI:` It is basically the loading screen. It shows a basic structure of different components used in our app. This is good user experience.
+- To add the `shimmer ui` we will first render our `shimmer component`. After rendering of shimmer component we will `re-render` our page which will show `data fetched` from the `api`.
+- This can be achieved using our `useEffect()` hook. Inside useEffect() hook we will fetch our data and render the app with new data. And we know that this fetching and rendering will be `delayed`.
+- `Conditional Rendering` : Conditional Rendering means to render our page according to a condition. For Ex : we are `rendering` our `shimmer ui` if our `restaurent list is empty` or our `data is not fetched yet from api`. 
+
+
