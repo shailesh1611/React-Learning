@@ -98,3 +98,7 @@
 - `Conditional Rendering` : Conditional Rendering means to render our page according to a condition. For Ex : we are `rendering` our `shimmer ui` if our `restaurent list is empty` or our `data is not fetched yet from api`. 
 
 
+# Adding Some features :
+- Add the Filter by Rating Feature
+- Add Search Functionality
+- This all can be add using useState() to re-render the page. Also, we will use javascript filter fuctions for this.
