@@ -28,6 +28,7 @@ const Body = () => {
                         value={searchValue}
                         onChange={(e)=>{
                             setSearchValue(e.target.value);
+                            if(e.target.value.length === 0) setDupResList(resList);
                         }}
                     />
 
