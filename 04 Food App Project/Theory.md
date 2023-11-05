@@ -102,3 +102,25 @@
 - Add the Filter by Rating Feature
 - Add Search Functionality
 - This all can be add using useState() to re-render the page. Also, we will use javascript filter fuctions for this.
+
+# Some more information about UseEffect() and UseState()
+- # UseEffect() : 
+    - `Syntax:` 
+        ```
+        useEffect(()=>{
+            // Callback Fuction
+        },[//optional dependency array])
+        ``` 
+    - `Effect of Dependency array:`
+        - If no depedency array is passed, then it will called every time component renders
+        - If empty dependency array is passed, then it will called only once at the first time component renders.
+        - If we pass any dependency, then it will called every time the dependency is updated. For Ex :
+            ```
+            useEffect(()=>{
+                // code
+            },[btnLogin])
+            ``` 
+            In above code snippet, whenever btnLogin change, our useEffect will be called.
+- # UseState() :
+    - Never create useState() variable outside of component.
+    - Never create useState() variable inside the ifelse statement.
