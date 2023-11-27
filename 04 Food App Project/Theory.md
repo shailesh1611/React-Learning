@@ -124,3 +124,15 @@
 - # UseState() :
     - Never create useState() variable outside of component.
     - Never create useState() variable inside the ifelse statement.
+
+
+# Routing in React
+- To work on routing, we will first install `react-router-dom` in our project. Use command `npm i react-router-dom`
+- To make routes, we will basically import `createBrowserRouter` in our `app.js`. To import use syntax:
+    ```
+    import {createBrowserRouter} from "react-router-dom";
+    ```
+- # Syntax for Routing:
+        ```
+        
+        ```

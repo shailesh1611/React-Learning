@@ -2,19 +2,30 @@ import ResCard from "./ResCard";
 import { data } from "../utils/res_data";
 import { useEffect, useState } from "react";
 import ShimmerCard from "./ShimmerCard";
+import { API_URL } from "../utils/constants";
 
 const Body = () => {
-    const resList = data?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+    const [resList,setResList] = useState([]);
 
     const [dupResList, setDupResList] = useState([]); // Hooks
     const [searchValue,setSearchValue] = useState("");
 
     useEffect(()=>{
-        setDupResList(resList);
+        fetchData();
     },[])
+
+    const fetchData = async () => {
+        const data = await fetch(API_URL);
+        const json = await data.json();
+        setResList(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    };
     
-    if(dupResList.length === 0) {
+    if(resList.length === 0) {
         return <ShimmerCard/>
+    }
+
+    if(resList.length !== 0 && dupResList.length === 0) {
+        setDupResList(resList);
     }
 
     return (
